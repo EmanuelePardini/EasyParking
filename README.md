@@ -1,4 +1,5 @@
 # EasyParking
+![Home Page](images/homepage.png)
 ## Description:
 A eParking complete WebApp
 
