@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="images/parking-logo.png" rel="icon">
+  <meta charset="UTF-8"/>
+  <title>Abbonamento</title>
+  <link rel="stylesheet" href="stylesform.css"/>
+  </head>
+  <body>
+
+<form method = "POST" action ="scr_abbonamento.php" class="speaker-form">
+    <h1>Abbonamento</h1>
+    <div class="form-row">
+<legend>Tipi di abbonamento</legend>
+<fieldset>
+
+Abbonamento annuale (225€)<input  type="radio" name="abbonamento" value="Abbonamento annuale"/><br>
+Abbonamento semestrale (175,00€)<input type="radio" name="abbonamento" value="Abbonamento semestrale"/><br>
+Abbonamento mensile(90,00€)<input type="radio" name="abbonamento" value="Abbonamento mensile"/><br>
+</fieldset>
+</div>
+<div class="form-row">
+  <label for="carta">Numero della carta di pagamento</label>
+  <input name="carta" type="text" placeholder="0123456789012345" value size="16"/>
+  </div>
+  <div class="form-row">
+  <label for="validita">Inizio di validità</label>
+  <input type="date" name="validita" placeholder="2025-06-14" max="2025-06-14"/>
+  </div>
+<div class="form-row">
+<input type = "submit" name = "Paga e abbonati" value = "Paga e Abbonati">
+</div>
+  </form>
+</body>
+</html>

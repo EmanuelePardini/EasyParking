@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="images/parking-logo.png" rel="icon">
+  <meta charset="UTF-8"/>
+  <title>Registrazione</title>
+  <link rel="stylesheet" href="stylesform.css"/>
+  </head>
+  <body>
+
+<form method = "POST" action ="scr_registr_iscritto.php" class="speaker-form">
+    <h1>Registrazione</h1>
+  <div class="form-row">
+    <label for="nome">Nome</label>
+    <input name="nome" type="text" placeholder="Mario" value size="32"/>
+    </div>
+    <div class="form-row">
+      <label for="cognome">Cognome</label>
+      <input name="cognome" type="text" placeholder="Rossi" value size="32"/>
+      </div>
+      <div class="form-row">
+        <label for="carta">Numero della carta di pagamento</label>
+        <input name="carta" type="text" placeholder="0123456789012345" value size="16"/>
+        </div>
+        <div class="form-row">
+          <label for="citta">Città</label>
+          <input name="citta" type="text" placeholder="Roma"value size="32"/>
+          </div>
+          <div class="form-row">
+            <label for="via">Via</label>
+            <input name="via" type="text" placeholder="Via Roma" value size="32"/>
+            </div>
+            <div class="form-row">
+              <label for="prov">Sigla Provincia</label>
+              <input name="prov" type="text" placeholder="RM" value size="2"/>
+              </div>
+              <div class="form-row">
+                <label for="data_nasc">Data di nascita</label>
+                <input name="data_nasc" type="date"/>
+                </div>
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input name="email" type="email" placeholder="MarioRossi@example.com"/>
+                  </div>
+                <div class="form-row">
+                    <label for="pwd">Password</label>
+                    <input name="pwd" type="password" placeholder="Pwd_12345"/>
+                    </div>
+                    <div class="form-row">
+                  <input type = "submit" name = "Registrati" value = "Registrati">
+                  </div>
+  </form>
+</body>
+</html>

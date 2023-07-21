@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="images/parking-logo.png" rel="icon">
+  <meta charset="UTF-8"/>
+  <title>Prenotazione</title>
+  <link rel="stylesheet" href="stylesform.css"/>
+  </head>
+  <body>
+
+<form method = "POST" action ="scr_prenotazione.php" class="speaker-form">
+    <h1>Prenotazione</h1>
+<div class="form-row">
+<label for="parking-time">Data e ora</label>
+<input type="datetime-local" name="parking-time" placeholder="2025-06-14 00:00" max="2025-06-14T00:00"/>
+</div>
+<div class="form-row">
+<legend>Tipo di veicolo</legend>
+<fieldset>
+Moto<input type="radio" name="veicolo" value="moto"/><br>
+Auto<input type="radio" name="veicolo" value="auto"/><br>
+Guida con disabilità<input type="radio" name="veicolo" value="guida con disabilità"/><br>
+</fieldset>
+</div>
+<div class="form-row">
+<legend>Metodo di pagamento</legend>
+<fieldset>
+Ticket online (7,50€/1gg)<input type="radio" name="pagamento" value="Ticket Online"/><br>
+Ticket al casello (10,00€/1gg)<input type="radio" name="pagamento" value="Ticket al Casello"/><br>
+Abbonamento esistente<input type="radio" name="pagamento" value="Abbonato"/><br>
+</fieldset>
+</div>
+<div class="form-row">
+<label for="targa">Targa</label>
+<input  name="targa" type="text" placeholder="AA12345, AA123AA.."/>
+</div>
+<div class="form-row">
+<legend>Parcheggio</legend>
+<fieldset>
+Via Ariberto<input type="radio" name="parcheggio" value="Via Ariberto"/><br>
+Via Orti<input type="radio" name="parcheggio" value="Via Orti"/><br>
+Via S. Marco<input type="radio" name="parcheggio" value="Via S. Marco"/><br>
+Via Nicola Piccinni<input type="radio" name="parcheggio" value="Via Nicola Piccini"/><br>
+</fieldset>
+</div>
+<div class="form-row">
+<input type = "submit" name = "Prenota" value = "Prenota">
+</div>
+  </form>
+</body>
+</html>
